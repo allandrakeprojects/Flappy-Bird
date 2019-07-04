@@ -923,7 +923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: TATALON LILIPAD SISIGAW ANG PANGALAN MO!
+  m_Text: LIPAD!
 --- !u!222 &709432049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1345,7 +1345,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'HIGHSCORE: 10'
+  m_Text: 'HIGHSCORE: 0'
 --- !u!222 &907351439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1611,7 +1611,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 0
 --- !u!222 &1048450974
 CanvasRenderer:
   m_ObjectHideFlags: 0

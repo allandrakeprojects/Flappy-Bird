@@ -156,7 +156,7 @@ public class Level : MonoBehaviour {
                 }
 
                 // Place Ground on the right most position
-                float groundWidth = 192f;
+                float groundWidth = 191f;
                 groundTransform.position = new Vector3(rightMostXPosition + groundWidth, groundTransform.position.y, groundTransform.position.z);
             }
         }
@@ -184,7 +184,8 @@ public class Level : MonoBehaviour {
 
             bool isToTheRightOfBird = pipe.GetXPosition() > BIRD_X_POSITION;
             pipe.Move();
-            if (isToTheRightOfBird && pipe.GetXPosition() <= BIRD_X_POSITION && pipe.IsBottom()) {
+            if (isToTheRightOfBird && pipe.GetXPosition() <= BIRD_X_POSITION && pipe.IsBottom())
+            {
                 // Pipe passed Bird
                 pipesPassedCount++;
 
