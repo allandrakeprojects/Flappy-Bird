@@ -30,7 +30,11 @@ public class Level : MonoBehaviour {
     private float pipeSpawnTimer;
     private float pipeSpawnTimerMax;
     private float gapSize;
+
     private State state;
+
+    private bool newHighscore = true;
+
 
     public enum Difficulty {
         Easy,
@@ -47,7 +51,7 @@ public class Level : MonoBehaviour {
 
     private void Awake() {
         instance = this;
-        SpawnInitialGround();
+        SpawnInitialGrounds();
         SpawnInitialClouds();
         pipeList = new List<Pipe>();
         pipeSpawnTimerMax = 1f;
@@ -82,6 +86,10 @@ public class Level : MonoBehaviour {
         cloudList = new List<Transform>();
         Transform cloudTransform;
         cloudTransform = Instantiate(GetCloudPrefabTransform(), new Vector3(0, CLOUD_SPAWN_Y_POSITION, 0), Quaternion.identity);
+        cloudList.Add(cloudTransform);
+        cloudTransform = Instantiate(GetCloudPrefabTransform(), new Vector3(100, CLOUD_SPAWN_Y_POSITION, 0), Quaternion.identity);
+        cloudList.Add(cloudTransform);
+        cloudTransform = Instantiate(GetCloudPrefabTransform(), new Vector3(150, CLOUD_SPAWN_Y_POSITION, 0), Quaternion.identity);
         cloudList.Add(cloudTransform);
     }
 
@@ -120,7 +128,7 @@ public class Level : MonoBehaviour {
         }
     }
 
-    private void SpawnInitialGround() {
+    private void SpawnInitialGrounds() {
         groundList = new List<Transform>();
         Transform groundTransform;
         float groundY = -47.5f;
@@ -179,7 +187,17 @@ public class Level : MonoBehaviour {
             if (isToTheRightOfBird && pipe.GetXPosition() <= BIRD_X_POSITION && pipe.IsBottom()) {
                 // Pipe passed Bird
                 pipesPassedCount++;
-                SoundManager.PlaySound(SoundManager.Sound.Score);
+
+                if (pipesPassedCount >= Score.GetHighscore() && newHighscore)
+                {
+                    // New Highscore!
+                    SoundManager.PlaySound(SoundManager.Sound.Highscore);
+                    newHighscore = false;
+                }
+                else
+                {
+                    SoundManager.PlaySound(SoundManager.Sound.Score);
+                }
             }
 
             if (pipe.GetXPosition() < PIPE_DESTROY_X_POSITION) {

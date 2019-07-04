@@ -187,6 +187,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameAssets
       objectReference: {fileID: 0}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.data[0].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c69e96a3450ffd468876217fbd40e02, type: 3}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.data[1].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f95c2826087ba614ba20037cee32b0b0, type: 3}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.data[2].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6d2f8b6223cc5e242a877cf8ee686443, type: 3}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.data[3].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1a8841bff12ccf344bb87166a79ab83e, type: 3}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.data[4].audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.data[5].sound
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3638002846688340021, guid: d9939957204202c4f9dc3fce1fbd524f,
+        type: 3}
+      propertyPath: soundAudioClipArray.Array.data[5].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 78582234b996f5041a9b321382efb727, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9939957204202c4f9dc3fce1fbd524f, type: 3}
 --- !u!1 &148928557

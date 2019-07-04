@@ -9,6 +9,7 @@ public static class SoundManager {
         Lose,
         ButtonOver,
         ButtonClick,
+        Highscore
     }
 
     public static void PlaySound(Sound sound) {
