@@ -4,7 +4,7 @@ public static class Score {
 
     public static void Start() {
         //ResetHighscore();
-        Bird.GetInstance().OnDied += Bird_OnDied;
+        //Bird.GetInstance().OnDied += Bird_OnDied;
     }
 
     private static void Bird_OnDied(object sender, System.EventArgs e) {
